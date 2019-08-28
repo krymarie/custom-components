@@ -66,7 +66,7 @@
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem3.14</h2>
+        <h2 class="headline font-weight-bold mb-3">Ecosystem6.14</h2>
 
         <v-layout justify-center>
           <a
