@@ -29,25 +29,14 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">This is what's next</h2>
-        
-        <v-layout justify-center>
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-layout>
+
       </v-flex>
 
       <v-flex
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
+        <h2 class="headline font-weight-bold mb-3">Or I could try this</h2>
 
         <v-layout justify-center>
           <a
