@@ -29,92 +29,7 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">This is what's next</h2>
-
-        <div id="app">
-  <v-app id="inspire">
-    <v-layout row>
-      <v-flex xs12 sm6 offset-sm3>
-        <v-card>
-          <v-toolbar color="indigo" dark>  
-            <v-toolbar-title>With ripple on v-list-tile</v-toolbar-title>
-          </v-toolbar>
-          <v-list>
-            <v-list-tile
-              v-for="item in items"
-              :key="item.title"
-              ripple
-              @click=""
-            >
-              <v-list-tile-action>
-                <v-btn icon>
-                  <v-icon v-if="item.icon" color="pink">star</v-icon>
-                </v-btn>
-              </v-list-tile-action>
-  
-              <v-list-tile-content>
-                <v-list-tile-title v-text="item.title"></v-list-tile-title>
-              </v-list-tile-content>
-  
-              <v-list-tile-action>
-                <v-list-tile-action-text>
-                  <v-menu bottom left>
-                    <v-btn icon slot="activator">
-                      <v-icon>more_vert</v-icon>
-                    </v-btn>
-                    <v-list>
-                      <v-list-tile>
-                        <v-list-tile-title>Action</v-list-tile-title>
-                      </v-list-tile>
-                    </v-list>
-                  </v-menu>
-                </v-list-tile-action-text>
-              </v-list-tile-action>
-            </v-list-tile>
-          </v-list>
-        </v-card>
         
-                <v-card>
-          <v-toolbar color="indigo" dark>  
-            <v-toolbar-title>Without ripple on v-list-tile</v-toolbar-title>
-          </v-toolbar>
-          <v-list>
-            <v-list-tile
-              v-for="item in items"
-              :key="item.title"
-              @click=""
-            >
-              <v-list-tile-action>
-                <v-btn icon>
-                  <v-icon v-if="item.icon" color="pink">star</v-icon>
-                </v-btn>
-              </v-list-tile-action>
-  
-              <v-list-tile-content>
-                <v-list-tile-title v-text="item.title"></v-list-tile-title>
-              </v-list-tile-content>
-  
-              <v-list-tile-action>
-                <v-list-tile-action-text>
-                  <v-menu bottom left>
-                    <v-btn icon slot="activator">
-                      <v-icon>more_vert</v-icon>
-                    </v-btn>
-                    <v-list>
-                      <v-list-tile>
-                        <v-list-tile-title>Action</v-list-tile-title>
-                      </v-list-tile>
-                    </v-list>
-                  </v-menu>
-                </v-list-tile-action-text>
-              </v-list-tile-action>
-            </v-list-tile>
-          </v-list>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-app>
-</div>
-
         <v-layout justify-center>
           <a
             v-for="(next, i) in whatsNext"
@@ -170,21 +85,7 @@
 </template>
 
 <script>
-//this is just me trying to do this than
-new Vue({
-  el: '#app',
-  data () {
-    return {
-      items: [
-        { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-        { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-        { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-        { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' }
-      ]
-    }
-  }
-})
-//end of code i added
+//end of code
 export default {
   data: () => ({
     ecosystem: [
