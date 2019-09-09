@@ -201,20 +201,77 @@
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem6.14</h2>
+        <h2 class="headline font-weight-bold mb-3">I've never tried this one before. So Cool and easy to customize.</h2>
 
-        <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-layout>
-      </v-flex>
+        
+v-app(light)
+
+    v-navigation-drawer(v-model='drawer' app stateless floating width='220')
+      v-toolbar.blue.darken-3
+        v-list
+          v-list-tile(@click='')
+            v-list-tile-content
+              v-list-tile-title.title #[v-icon.mr-2 home]Krystal's CRM
+              <v-icon>mdi-mouse</v-icon>
+      v-list
+        v-list-tile(v-for='(title, icon) in mainMenu' @click='')
+          v-list-tile-action
+            v-icon {{ icon }}
+          v-list-tile-content
+            v-list-tile-title {{ title }}
+
+    v-toolbar(app).blue.darken-4
+      v-toolbar-side-icon(@click.stop='clickToggleDrawer')
+      v-spacer
+      v-btn(icon)
+        v-icon search
+      v-btn(icon)
+        v-icon email
+      v-menu(offset-y)
+        v-btn(flat slot='activator' small)
+          | Monster Account Manager
+          v-icon keyboard_arrow_down
+        v-list
+          v-list-tile(@click='')
+            v-icon.mr-2 settings
+            v-list-tile-title Settings
+          v-list-tile(@click='')
+            v-icon.mr-2 exit_to_app
+            v-list-tile-title Logout
+      v-avatar(size='36' class='mr-2')
+        img(src='http://i.pravatar.cc/150?img=53')
+
+    v-content
+      v-container.pa-4(fluid grid-list-md)
+        v-layout(wrap)
+          v-flex(xs12)
+            h1.display-1.mb-1 Dashboard
+          v-flex(xs12 md6)
+            v-layout(wrap)
+              v-flex(v-for='stat in stats' xs6)
+                v-card(height='100%').text-xs-center
+                  v-card-text
+                    .display-1.mb-2 {{ stat.number }}
+                    | {{ stat.label }}
+          v-flex(md6)
+            v-card(height='100%')
+              v-card-title.grey.light-4 Tasks
+              v-data-table.mt-1(:items='tasks' hide-headers hide-actions)
+                template(slot='items' slot-scope='props')
+                  td
+                    v-checkbox(@click='clickDeleteTask(props.item)')
+                  td {{ props.item.title }}
+          v-flex(xs12)
+            v-card
+              v-card-title.grey.light-4
+                | New Leads
+                v-spacer
+                v-text-field(v-model='newLeadsSearch' append-icon='search' label='Search')
+              v-data-table(:headers='newLeadsHeaders' :items='newLeads' :search='newLeadsSearch')
+                template(slot='items' slot-scope='props')
+                  td {{ props.item.firstName }} {{ props.item.lastName }}
+                  td {{ props.item.email }}
+                  td {{ props.item.company }}      </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -222,7 +279,146 @@
 <script>
 //end of code
 export default {
+const stats = [
+  {
+    number: '42',
+    label: 'New leads this week',
+  },
+  {
+    number: '$8,312',
+    label: 'Sales this week',
+  },
+  {
+    number: '233',
+    label: 'New leads this month',
+  },
+  {
+    number: '$24,748',
+    label: 'Sales this month',
+  },
+]
+
+const tasks = [
+  {
+    id: 0,
+    title: 'Book meeting for Thursday'
+  },
+  {
+    id: 1,
+    title: 'Review new leads'
+  },
+  {
+    id: 2,
+    title: 'Be awesome!'
+  },
+]
+
+const newLeads = [
+  {
+    firstName: 'Giselbert',
+    lastName: 'Hartness',
+    email: 'ghartness0@mail.ru',
+    company: 'Kling LLC',
+  },
+  {
+    firstName: 'Honey',
+    lastName: 'Allon',
+    email: 'hallon1@epa.gov',
+    company: 'Rogahn-Hermann',
+  },
+  {
+    firstName: 'Tommy',
+    lastName: 'Rickards',
+    email: 'trickards2@timesonline.co.uk',
+    company: 'Kreiger, Wehner and Lubowitz',
+  },
+  {
+    firstName: 'Giffy',
+    lastName: 'Farquharson',
+    email: 'gfarquharson3@goo.gl',
+    company: 'Heathcote-Funk',
+  },
+  {
+    firstName: 'Rahel',
+    lastName: 'Matches',
+    email: 'rmatches4@sfgate.com',
+    company: 'Maggio, Russel and Feeney',
+  },
+  {
+    firstName: 'Krystal',
+    lastName: 'Natte',
+    email: 'knatte5@opera.com',
+    company: 'Sanford-Feeney',
+  },
+  {
+    firstName: 'Ronnica',
+    lastName: 'Galliver',
+    email: 'rgalliver6@epa.gov',
+    company: 'Schaefer Group',
+  },
+  {
+    firstName: 'Jenny',
+    lastName: 'Bugge',
+    email: 'jbugge7@independent.co.uk',
+    company: 'Gutmann, Miller and Prosacco',
+  },
+  {
+    firstName: 'Tracee',
+    lastName: 'Viscovi',
+    email: 'tviscovi8@techcrunch.com',
+    company: 'Anderson, Kohler and Renner',
+  },
+  {
+    firstName: 'Teodor',
+    lastName: 'Fitzsimmons',
+    email: 'tfitzsimmons9@mediafire.com',
+    company: 'Durgan-Kovacek',
+  },
+]
+
+const newLeadsHeaders = [
+  {
+    text: 'Name',
+    value: 'firstName',
+  },
+  {
+    text: 'Email',
+    value: 'email',
+  },
+  {
+    text: 'Company',
+    value: 'company',
+  },
+]
+  methods: {
+    clickToggleDrawer() {
+      this.drawer = !this.drawer
+    },
+    clickDeleteTask(task) {
+      const i = this.tasks.indexOf(task)
+      this.tasks.splice(i, 1)
+    },
+  },
+})
+
+
+
   data: () => ({
+    drawer: true,
+    mainMenu: {
+      dashboard: 'Dashboard',
+      people: 'Leads',
+      business: 'Companies',
+      business_center: 'Deals',
+      file_copy: 'Invoices',
+      settings: 'Settings',
+    },
+    stats,
+    tasks,
+    newLeads,
+    newLeadsHeaders,
+    newLeadsSearch: '',
+  },
     
       items: [
         { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
