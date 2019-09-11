@@ -204,21 +204,6 @@
 export default {
 
   data: () => ({
-    drawer: true,
-    mainMenu: {
-      dashboard: 'Dashboard',
-      people: 'Leads',
-      business: 'Companies',
-      business_center: 'Deals',
-      file_copy: 'Invoices',
-      settings: 'Settings',
-    },
-    stats,
-    tasks,
-    newLeads,
-    newLeadsHeaders,
-    newLeadsSearch: '',
-  },
     
       items: [
         { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
