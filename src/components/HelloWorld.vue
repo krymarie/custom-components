@@ -14,6 +14,7 @@
       </v-flex>
 
       <v-flex mb-4>
+      <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
         <h1 class="display-2 font-weight-bold mb-3">
           Krystal's Monster Project
         </h1>
