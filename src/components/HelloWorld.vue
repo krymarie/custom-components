@@ -10,6 +10,10 @@
       <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
       </v-flex>
 
+      <v-flex xs12>
+      <a href="src/assets/logo.png">
+      </v-flex xs12>
+
         <v-flex xs12>
         <section class="ma-2" class="row">
         <div class="small-6 columns">
