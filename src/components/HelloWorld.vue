@@ -9,16 +9,13 @@
       <v-flex mb-4>
       <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
       </v-flex>
-
-     
-        <h2 class="headline font-weight-bold mb-3">This is what's next</h2>
         <v-flex xs12>
         <section class="row">
         <div class="small-6 columns">
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                {{playerHealth}}
                 </div>
             </div>
         </div>
@@ -26,7 +23,7 @@
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                {{monsterHealth}}
                 </div>
             </div>
         </div>
@@ -65,10 +62,14 @@
 </template>
 
 <script>
+//possibly just use this here for the script for vue <script src="app.js">
 //end of code
 export default {
 
   data: () => ({
+    playerHealth: 100,
+    monsterHealth: 100,
+    gameIsRuning: false
     
       items: [
         { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
