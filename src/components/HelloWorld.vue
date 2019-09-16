@@ -69,7 +69,7 @@ export default {
   data: () => ({
     playerHealth: 100,
     monsterHealth: 100,
-    gameIsRuning: false
+    gameIsRuning: false,
     
       items: [
         { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
