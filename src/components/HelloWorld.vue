@@ -87,6 +87,6 @@ export default {
       this.playerHealth = 100;
       this.monsterHealth = 100;
     }
-  }
+  }),
 };
 </script>
