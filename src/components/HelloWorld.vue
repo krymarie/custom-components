@@ -46,7 +46,7 @@
             <v-btn id="attack" @click="attack" outlined color="red">New ATTACK</v-btn>
             <v-btn id="special-attack" @click="specialAttack" outlined color="orange">SPECIAL ATTACK</v-btn>
             <v-btn id="heal" @click="heal" outlined color="green">HEAL</v-btn>
-            <v-btn id="give-up" @click="giveUp" outlined color="gray">GIVE UP</v-btn>
+            <v-btn id="give-up" @click="giveUp" outlined color="dark">GIVE UP</v-btn>
         </div>
     </section>
     <section class="row log" v-if="turns.length > 0">
