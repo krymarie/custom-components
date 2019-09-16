@@ -58,13 +58,6 @@
             </ul>
         </div>
     </section>
-      </v-flex>
-        <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          height="200"
-        ></v-img>
-      </v-flex>
     </v-layout>
   </v-container>
 </template>
