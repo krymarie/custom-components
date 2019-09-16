@@ -62,12 +62,9 @@ button {
     margin: 10px;
 }
 
-#start-game {
-    background-color: #aaffb0;
-}
 
 #start-game:hover {
-    background-color: #76ff7e;
+    background-color: #d6f8d9;
 }
 
 #attack {
