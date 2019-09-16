@@ -4,11 +4,6 @@
       text-center
       wrap
     >
-      
-
-      <v-flex mb-4>
-      <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
-      </v-flex>
 
       <v-flex xs12>
       <a href="src/assets/logo.png">
@@ -43,16 +38,15 @@
     </section>
     <section class="row controls" v-if="!gameIsRunning">
         <div class="small-12 columns">
-            <button id="start-game" @click="startGame">START NEW GAME</button>
+            <v-btn id="start-game" @click="startGame" outlined color="infigo">START NEW GAME</v-btn>
         </div>
     </section>
     <section class="row controls" v-else>
         <div class="small-12 columns">
             <v-btn id="attack" @click="attack" outlined color="indigo">New ATTACK</v-btn>
-            <button id="attack" @click="attack">ATTACK</button>
-            <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
-            <button id="heal" @click="heal">HEAL</button>
-            <button id="give-up" @click="giveUp">GIVE UP</button>
+            <v-btn id="special-attack" @click="specialAttack" outlined color="indigo">SPECIAL ATTACK</v-btn>
+            <v-btn id="heal" @click="heal" outlined color="indigo">HEAL</v-btn>
+            <v-btn id="give-up" @click="giveUp" outlined color="indigo">GIVE UP</v-btn>
         </div>
     </section>
     <section class="row log" v-if="turns.length > 0">
