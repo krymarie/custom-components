@@ -10,11 +10,9 @@
       <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
       </v-flex>
 
-      <v-flex
-        mb-5
-        xs12
-      >
+     
         <h2 class="headline font-weight-bold mb-3">This is what's next</h2>
+        <v-flex xs12>
         <section class="row">
         <div class="small-6 columns">
             <h1 class="text-center">YOU</h1>
@@ -55,7 +53,7 @@
             </ul>
         </div>
     </section>
-        <h2 class="headline font-weight-bold mb-3">I've never tried this one before. So Cool and easy to customize.</h2>
+      </v-flex>
         <v-flex xs12>
         <v-img
           :src="require('../assets/logo.svg')"
