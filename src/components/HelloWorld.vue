@@ -111,14 +111,14 @@ export default {
    
     checkWin: function() {
       if (this.monsterHealth <= 0) {
-        if (confirm('Your won! New Game?)) {
+        if (confirm('Your won! New Game?')) {
           this.startGame();
         } else {
           this.gameIsRunning = false;
         }
         return true;
       } else if (this.playerHealth <= 0) {
-        if (confirm('Your lost! New Game?)) {
+        if (confirm('Your lost! New Game?')) {
           this.startGame();
         } else {
           this.gameIsRunning = false;
