@@ -48,6 +48,7 @@
     </section>
     <section class="row controls" v-else>
         <div class="small-12 columns">
+            <v-btn id="attack" @click="attack" outlined color="indigo">New ATTACK</v-btn>
             <button id="attack" @click="attack">ATTACK</button>
             <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
             <button id="heal" @click="heal">HEAL</button>
