@@ -6,7 +6,7 @@
     >
 
       <v-flex xs12>
-      <a href="src/assets/logo.png">
+        <v-img src="src/assets/logo.png"></v-img>
       </v-flex xs12>
 
         <v-flex xs12>
