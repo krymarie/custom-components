@@ -13,7 +13,7 @@
         <v-flex xs12>
         <section class="ma-2" class="row">
         <div class="small-6 columns">
-            <v-img class="text-center" src="assets/guy.png"></v-img>
+            <v-img class="text-center" max-height="600" src="assets/guy.png"></v-img>
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
                 <div 
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="small-6 columns">
-            <v-img class="text-center" src="assets/zombieGuy.png"></v-img>
+            <v-img class="text-center" max-height="600" src="assets/zombieGuy.png"></v-img>
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
                 <div 
