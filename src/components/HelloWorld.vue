@@ -6,7 +6,8 @@
     >
 
       <v-flex xs12>
-        <v-img src="assets/logo.png"></v-img>
+        <v-img src="assets/logo.png" max-width="300"
+        max-height="300"></v-img>
       </v-flex xs12>
 
         <v-flex xs12>
