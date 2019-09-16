@@ -15,7 +15,7 @@
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
                 <div 
-                class="healthbar text-center" 
+                class="healthbar text-center fill-height repeating-gradient"
                 style="background-color: indigo; margin: 0; color: white;"
                 :style= "{width: playerHealth + '%'}">
 
@@ -38,7 +38,7 @@
     </section>
     <section class="row controls" v-if="!gameIsRunning">
         <div class="small-12 columns">
-            <v-btn id="start-game" @click="startGame" outlined color="infigo">START NEW GAME</v-btn>
+            <v-btn id="start-game" @click="startGame" outlined color="indigo">START NEW GAME</v-btn>
         </div>
     </section>
     <section class="row controls" v-else>
