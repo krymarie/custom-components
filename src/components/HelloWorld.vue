@@ -49,7 +49,7 @@
             <button id="give-up" @click="giveUp">GIVE UP</button>
         </div>
     </section>
-    <section class="row log">
+    <section class="row log" v=if="turns.length > 0">
         <div class="small-12 columns">
             <ul>
                 <li v-for="turn in turns">
@@ -125,7 +125,7 @@ export default {
       this.turns.unshift({
         isPlayer: false;
         text: 'Monster hits Player with ' + damage
-      })
+      });
     },
     
     calculateDamage: function(min, max) {
