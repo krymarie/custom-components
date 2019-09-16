@@ -38,7 +38,7 @@
     </section>
     <section class="row controls" v-if="!gameIsRunning">
         <div class="small-12 columns">
-            <button id="start-game">START NEW GAME</button>
+            <button id="start-game" @click="startGame">START NEW GAME</button>
         </div>
     </section>
     <section class="row controls" v-else>
@@ -70,7 +70,7 @@ export default {
   data: () => ({
     playerHealth: 100,
     monsterHealth: 100,
-    gameIsRuning: false,
+    gameIsRunning: false,
     
       items: [
         { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
@@ -78,57 +78,15 @@ export default {
         { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
         { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
       ],
-      settings: [],
-    ecosystem: [
-      {
-        text: 'vuetify-loader',
-        href: 'https://github.com/vuetifyjs/vuetify-loader',
-      },
-      {
-        text: 'github',
-        href: 'https://github.com/vuetifyjs/vuetify',
-      },
-      {
-        text: 'awesome-vuetify',
-        href: 'https://github.com/vuetifyjs/awesome-vuetify',
-      },
-    ],
-    importantLinks: [
-      {
-        text: 'Documentation',
-        href: 'https://vuetifyjs.com',
-      },
-      {
-        text: 'Chat',
-        href: 'https://community.vuetifyjs.com',
-      },
-      {
-        text: 'Made with Vuetify',
-        href: 'https://madewithvuejs.com/vuetify',
-      },
-      {
-        text: 'Twitter',
-        href: 'https://twitter.com/vuetifyjs',
-      },
-      {
-        text: 'Articles',
-        href: 'https://medium.com/vuetify',
-      },
-    ],
-    whatsNext: [
-      {
-        text: 'Explore components',
-        href: 'https://vuetifyjs.com/components/api-explorer',
-      },
-      {
-        text: 'Select a layout',
-        href: 'https://vuetifyjs.com/layout/pre-defined',
-      },
-      {
-        text: 'Frequently Asked Questions',
-        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-      },
-    ],
+     
   }),
+
+  methods: () => ({
+    startGame: function() {
+      this.gameIsRunning = true;
+      this.playerHealth = 100;
+      this.monsterHealth = 100;
+    }
+  }
 };
 </script>
