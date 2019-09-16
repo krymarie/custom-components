@@ -72,10 +72,7 @@ export default {
     monsterHealth: 100,
     gameIsRunning: false,
     turns: []
-  
-     
   }),
-
   methods: {
     startGame: function() {
       this.gameIsRunning = true;
@@ -93,8 +90,9 @@ export default {
         return;
       }
 
-      this.playerHealth -= this.calculateDamage(5, 12);
-      this.checkWin();
+      this.monsterAttacks();
+      //this.playerHealth -= this.calculateDamage(5, 12);
+      //this.checkWin();
     },
 
     specialAttack: function() {
@@ -123,11 +121,10 @@ export default {
       this.playerHealth -= damage;
       this.checkWin();
       this.turns.unshift({
-        isPlayer: false;
+        isPlayer: false,
         text: 'Monster hits Player with ' + damage
       });
     },
-    
     calculateDamage: function(min, max) {
       return Math.max(Math.floor(Math.random() * max) +1, min);
     },
