@@ -71,22 +71,16 @@ export default {
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
-    
-      items: [
-        { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-        { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-        { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-        { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
-      ],
      
   }),
 
-  methods: () => ({
+  methods: {
     startGame: function() {
       this.gameIsRunning = true;
       this.playerHealth = 100;
       this.monsterHealth = 100;
     }
-  }),
+  }
+  
 };
 </script>
