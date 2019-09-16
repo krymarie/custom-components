@@ -89,11 +89,7 @@ export default {
       }
 
       this.playerHealth -= this.calculateDamage(5, 12);
-
-      if (this.playerHealth <= 0) {
-        alert('You lost!');
-        this.gameIsRunning = false;
-      }
+      
       this.checkWin();
     },
 
