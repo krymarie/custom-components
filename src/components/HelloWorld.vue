@@ -4,14 +4,7 @@
       text-center
       wrap
     >
-      <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
-      </v-flex>
+      
 
       <v-flex mb-4>
       <v-btn class="ma-2" outlined color="indigo">Outlined Button</v-btn>
@@ -63,6 +56,14 @@
         </div>
     </section>
         <h2 class="headline font-weight-bold mb-3">I've never tried this one before. So Cool and easy to customize.</h2>
+        <v-flex xs12>
+        <v-img
+          :src="require('../assets/logo.svg')"
+          class="my-3"
+          contain
+          height="200"
+        ></v-img>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
