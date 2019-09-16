@@ -1,5 +1,19 @@
 # krystal-mitchell-monster-project
 
+#HERE ARE JUST A FEW OF THE WAYS MY PROJECT VARRIES FROM 
+
+#
+
+#
+
+#
+
+#
+
+
+#I SPENT THE WEEK BUILDING A CRM WITH VUTIFY IN CODE PEN SO EASY TO USE ALMOST POSTED THAT INSTEAD
+
+
 ## Project setup
 ```
 yarn install
