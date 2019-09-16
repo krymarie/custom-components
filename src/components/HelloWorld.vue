@@ -43,10 +43,10 @@
     </section>
     <section class="row controls" v-else>
         <div class="small-12 columns">
-            <button id="attack">ATTACK</button>
-            <button id="special-attack">SPECIAL ATTACK</button>
-            <button id="heal">HEAL</button>
-            <button id="give-up">GIVE UP</button>
+            <button id="attack" @click="attack">ATTACK</button>
+            <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
+            <button id="heal" @click="heal">HEAL</button>
+            <button id="give-up" @click="giveUp">GIVE UP</button>
         </div>
     </section>
     <section class="row log">
@@ -80,7 +80,58 @@ export default {
       this.gameIsRunning = true;
       this.playerHealth = 100;
       this.monsterHealth = 100;
+    },
+    attack: function() {
+      this.monsterHealth -= this.calculateDamage(3, 10);
+
+      if(this.checkWin()) {
+        return;
+      }
+
+      this.playerHealth -= this.calculateDamage(5, 12);
+
+      if (this.playerHealth <= 0) {
+        alert('You lost!');
+        this.gameIsRunning = false;
+      }
+      this.checkWin();
+    },
+
+    specialAttack: function() {
+
+    },
+
+    heal: function() {
+
+    },
+
+    giveUp: function() {
+
+    },
+    
+    calculateDamage: function(min, max) {
+      return Math.max(Math.floor(Math.random() * max) +1, min)
+    },
+   
+    checkWin: function() {
+      if (this.monsterHealth <= 0) {
+        if (confirm('Your won! New Game?)) {
+          this.startGame();
+        } else {
+          this.gameIsRunning = false;
+        }
+        return true;
+      } else if (this.playerHealth <= 0) {
+        if (confirm('Your lost! New Game?)) {
+          this.startGame();
+        } else {
+          this.gameIsRunning = false;
+        }
+        return true;
+      }
+      return false;
     }
   }
+
 };
 </script>
