@@ -79,30 +79,32 @@ export default {
       this.gameIsRunning = true;
       this.playerHealth = 100;
       this.monsterHealth = 100;
+      this.turns = [];
     },
     attack: function() {
       var damage = this.calculateDamage(3, 10);
       this.monsterHealth -= damage;
       this.turns.unshift({
         isPlayer: true,
-        text: 'Player hits Monster for ' + damage
+        text: 'Player hits Monster with ' + damage
       });
       if(this.checkWin()) {
         return;
       }
-
       this.monsterAttacks();
-      //this.playerHealth -= this.calculateDamage(5, 12);
-      //this.checkWin();
     },
 
     specialAttack: function() {
-      this.monsterHealth -= this.calculateDamage(10, 20);
+      var damage = this.calculateDamage(10, 20);
+      this.monsterHealth -= damage;
+      this.turns.unshift({
+        isPlayer: true,
+        text: 'Player hits Monster hard with ' + damage
+      });
       if(this.checkWin()) {
         return;
       }
-
-      this.monsterAttacks ();
+      this.monsterAttacks();
     },
 
     heal: function() {
@@ -111,6 +113,10 @@ export default {
       } else {
         this.playerHealth = 100;
       }
+      this.turns.unshift({
+        isPlayer: true,
+        text: 'Player heals by 10 '
+      });
       this.monsterAttacks();      
     },
 
