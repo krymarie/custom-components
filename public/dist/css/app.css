@@ -64,37 +64,21 @@ button {
 
 
 #start-game:hover {
-    background-color: #d6f8d9;
-}
-
-#attack {
-    background-color: #ff7367;
+    background-color: #332f2f;
 }
 
 #attack:hover {
-    background-color: #ff3f43;
-}
-
-#special-attack {
-    background-color: #ffaf4f;
+    background-color: #332f2f;
 }
 
 #special-attack:hover {
-    background-color: #ff9a2b;
-}
-
-#heal {
-    background-color: #aaffb0;
+    background-color: #332f2f;
 }
 
 #heal:hover {
-    background-color: #76ff7e;
-}
-
-#give-up {
-    background-color: #ffffff;
+    background-color: #332f2f;
 }
 
 #give-up:hover {
-    background-color: #c7c7c7;
+    background-color: #332f2f;
 }
