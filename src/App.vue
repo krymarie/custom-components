@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app(dark)>
   <h1>This is Krystal's Projects Today Yall</h1>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
