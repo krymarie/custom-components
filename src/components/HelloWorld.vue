@@ -12,11 +12,9 @@
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient"
-                style="background-color: indigo; margin: 8 0 0 0; color: white;"
+                style="background-color: indigo; margin: 0; color: white;"
                 :style= "{width: playerHealth + '%'}">
-
                 {{playerHealth}}
-                
                 </div>
             </div>
         </div>
