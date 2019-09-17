@@ -56,7 +56,6 @@
 
 button {
     font-size: 20px;
-    background-color: #eee;
     padding: 12px;
     box-shadow: 0 1px 1px black;
     margin: 10px;
@@ -64,23 +63,23 @@ button {
 
 
 #start-game:hover {
-    background-color: #332f2f;
+    background-color: #6d6b6b;
 }
 
 #attack:hover {
-    background-color: #332f2f;
+    background-color: #6d6b6b;
 }
 
 #special-attack:hover {
-    background-color: #332f2f;
+    background-color: #6d6b6b;
 }
 
 #heal:hover {
-    background-color: #332f2f;
+    background-color: #6d6b6b;
 }
 
 #give-up:hover {
-    background-color: #332f2f;
+    background-color: #6d6b6b;
 }
   
 .modal {
