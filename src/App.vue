@@ -18,10 +18,7 @@
     <v-content text-center>
       <HelloWorld/>
     </v-content>
-    <v-footer absolute padless class="text-center">
-      <div class="flex-grow-1 text-center"></div>
-      <div>&copy; {{ new Date().getFullYear() }}</div>
-    </v-footer>
+    
     <v-card height="150">
       <v-footer
         absolute
