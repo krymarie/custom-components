@@ -119,14 +119,7 @@ export default {
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
-    turns: [],
-    icons: [
-      'fab fa-facebook',
-      'fab fa-twitter',
-      'fab fa-google-plus',
-      'fab fa-linkedin',
-      'fab fa-instagram',
-    ],
+    turns: []
   }),
   methods: {
     startGame: function() {
