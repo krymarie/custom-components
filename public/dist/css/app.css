@@ -92,13 +92,14 @@ button {
     background: rgba(0, 0, 0, 0.7);
     display: table;
     transition: opacity .3s ease;
+}
     
-        &-wrapper {
+        .modal wrapper {
         display: table-cell;
         vertical-align: middle;
         }
     
-        &-container {
+        .modal container {
         background: #fff;
         width: 450px;
         border-radius: 5px;
@@ -108,17 +109,17 @@ button {
         padding: 20px 30px;
         }
     
-        &-footer {
+        .modal footer {
         margin-top: 15px;
         }
         
-        &-enter, &-leave {
+        .modal enter, .modal leave {
         opacity: 0;
         }
         
-        &-enter &-container,
-        &-leave &-container {
+        .modal enter .modal container,
+        .modal eave .modal container {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         }
-  }
+  
