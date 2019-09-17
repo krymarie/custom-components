@@ -71,48 +71,19 @@
           </div>
       </section>
 
-    </section
-
-    <v-footer
-      dark
-      padless
-    >
-      <v-card
-        class="flex"
-        flat
-        tile
-      >
-        <v-card-title class="teal">
-          <strong class="subheading">Get connected with us on social networks!</strong>
-  
-          <div class="flex-grow-1"></div>
-  
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            dark
-            icon
-          >
-            <v-icon size="24px">{{ icon }}</v-icon>
-          </v-btn>
-        </v-card-title>
-  
-        <v-card-actions class="grey darken-3 justify-center">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-actions>
-      </v-card>
+    </section>
+    
+    <v-footer>
+      <div class="flex-grow-1"></div>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
-
+    
     </v-layout>
   </v-container>
 </template>
 
 <script>
 export default {
-
-  
-  el: '#app'
 
   data: () => ({
     showModal: false,
