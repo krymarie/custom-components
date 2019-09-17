@@ -73,6 +73,21 @@
 
     </section
 
+    <div>
+  <b-alert show variant="success">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>
+      Aww yeah, you successfully read this important alert message. This example text is going to
+      run a bit longer so that you can see how spacing within an alert works with this kind of
+      content.
+    </p>
+    <hr>
+    <p class="mb-0">
+      Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+    </p>
+  </b-alert>
+</div>
+
     </v-layout>
   </v-container>
 </template>
@@ -85,7 +100,7 @@ Vue.component('modal', {
     show: {
       type: Boolean,
       required: true,
-      twoWay: true  
+      twoWay: true, 
     }
   }
 });
@@ -100,6 +115,7 @@ export default {
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
+    success: false,
     turns: []
   }),
   methods: {
@@ -166,7 +182,7 @@ export default {
    
     checkWin: function() {
       if (this.monsterHealth <= 0) {
-        if (confirm('Your won! New Game?')) {
+        if (sucsess('Your won! New Game?')) {
           this.startGame();
         } else {
           this.gameIsRunning = false;
