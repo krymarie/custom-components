@@ -12,7 +12,7 @@
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient"
-                style="background-color: indigo; margin: 0; color: white;"
+                style="background-color: indigo; margin: 8 0 0 0; color: white;"
                 :style= "{width: playerHealth + '%'}">
 
                 {{playerHealth}}
@@ -23,10 +23,10 @@
         <div class="small-6 columns">
             <v-img class="text-center mx-auto" max-width="151" src="assets/zombieGuy.png"></v-img>
             <h1 class="text-center"></h1>
-            <div class="healthbar mt-8">
+            <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient" 
-                style="background-color: red; margin-top: 8px; color: white;"
+                style="background-color: red; margin: 0; color: white;"
                 :style= "{width: monsterHealth + '%'}">
                 {{monsterHealth}}
                 </div>
@@ -47,10 +47,10 @@
         </div>
     </section>
     
-    <section class="ma-2 " class="row">
+    <section class="ma-2 ma-auto" class="row">
       
       <section class="row log ma-auto" v-if="turns.length > 0">
-          <div class="columns mx-auto">
+          <div class="columns ma-auto">
               <ul>
                   <li v-for="turn in turns" v-show="turn.isPlayer"
                       :class="{'player-turn': turn.isPlayer}">
@@ -61,7 +61,7 @@
       </section>
 
       <section class="row log ma-auto" v-if="turns.length > 0">
-          <div class="columns mx-auto">
+          <div class="columns ma-auto">
               <ul>
                   <li v-for="turn in turns" v-show="!turn.isPlayer"
                       :class="{'monster-turn': !turn.isPlayer}">
