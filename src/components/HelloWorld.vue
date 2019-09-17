@@ -93,25 +93,11 @@
 </template>
 
 <script>
-
-Vue.component('modal', {
-  template: '#modal-template',
-  props: {
-    show: {
-      type: Boolean,
-      required: true,
-      twoWay: true  
-    }
-  }
-});
 //possibly just use this here for the script for vue <script src="app.js">
 //end of code
 export default {
 
-  el: '#modal-app',
-
   data: () => ({
-    showModal: false,
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
