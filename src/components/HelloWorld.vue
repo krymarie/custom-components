@@ -45,8 +45,10 @@
             <v-btn id="give-up" @click="giveUp" outlined color="dark">GIVE UP</v-btn>
         </div>
     </section>
+    
+    <section class="ma-2" class="row">
     <section class="row log" v-if="turns.length > 0">
-        <div class="small-12 columns">
+        <div class="small-6 columns">
             <ul>
                 <li v-for="turn in turns"
                     :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}">
@@ -55,6 +57,18 @@
             </ul>
         </div>
     </section>
+    <section class="row log" v-if="turns.length > 0">
+        <div class="small-6 columns">
+            <ul>
+                <li v-for="turn in turns"
+                    :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}">
+                  {{ turn.text }}
+                </li>
+            </ul>
+        </div>
+    </section>
+    </section>
+
     </v-layout>
   </v-container>
 </template>
