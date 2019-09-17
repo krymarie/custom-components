@@ -5,7 +5,7 @@
       wrap
     >
         <v-flex xs12>
-        <section class="ma-2" class="row">
+        <section class="ma-2 mx-auto" class="row">
         <div class="small-6 columns">
             <v-img class="text-center mb-4 mx-auto" max-width="150" src="assets/guy.png"></v-img>
             <div class="healthbar">
