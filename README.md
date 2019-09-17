@@ -4,9 +4,9 @@
 
 #v-btn to easily clean up all buttons
 
-#v-img for new game icon
+#v-img for new game icons
 
-#gadient component on health bar
+#gadient component on health bar making it fun
 
 #
 
