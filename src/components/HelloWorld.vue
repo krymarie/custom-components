@@ -110,11 +110,9 @@ Vue.component('modal', {
 export default {
 
   el: '#modal-app',
-  data: {
-    showModal: false
-  }
 
   data: () => ({
+    showModal: false
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
