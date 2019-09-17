@@ -4,11 +4,10 @@
       text-center
       wrap
     >
-
         <v-flex xs12>
         <section class="ma-2" class="row">
         <div class="small-6 columns">
-            <v-img class="text-center" max-width="150" src="assets/guy.png"></v-img>
+            <v-img class="text-center pb-4" max-width="150" src="assets/guy.png"></v-img>
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient"
