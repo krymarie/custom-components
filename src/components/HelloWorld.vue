@@ -1,46 +1,14 @@
-  <div id="modal-app" class="uk-container uk-container-center uk-margin-top">
-  <button v-on="click: showModal = true" class="uk-button uk-button-primary">Show Modal</button>
-  
-  <modal show="{{@showModal}}">
-    <div class="modal-header">
-      <h3>
-        Hello Vue.JS
-      </h3>
-    </div>
-  </modal>
-</div>
-
-<template id="modal-template">
-<v-container>
+<template>
+  <v-container>
     <v-layout
       text-center
       wrap
     >
 
-  <div class="modal" v-show="show" v-transition="modal">
-    <div class="modal-wrapper">
-      <div class="modal-container">
-        <content select=".modal-header">
-          <div class="modal-header">
-            <h3>
-              Hello World
-            </h3>
-          </div>
-        </content>
-        <div class="modal-body">
-          I said hello to world not you
-        </div>
-        <div class="modal-footer uk-clearfix">
-            <button v-on="click: show = false" class="uk-button uk-button-success uk-float-right">Ok, I hear!</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
         <v-flex xs12>
         <section class="ma-2" class="row">
         <div class="small-6 columns">
-            <v-img class="text-center pb-10" max-width="150" src="assets/guy.png"></v-img>
+            <v-img class="text-center" max-width="150" src="assets/guy.png"></v-img>
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient"
@@ -93,11 +61,25 @@
 </template>
 
 <script>
+
+Vue.component('modal', {
+  template: '#modal-template',
+  props: {
+    show: {
+      type: Boolean,
+      required: true,
+      twoWay: true  
+    }
+  }
+});
 //possibly just use this here for the script for vue <script src="app.js">
 //end of code
 export default {
 
+  el: '#modal-app',
+
   data: () => ({
+    showModal: false,
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
