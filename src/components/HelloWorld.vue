@@ -7,7 +7,7 @@
         <v-flex xs12>
         <section class="ma-2" class="row">
         <div class="small-6 columns">
-            <v-img class="text-center" max-width="150" src="assets/guy.png"></v-img>
+            <v-img class="text-center mb-4" max-width="150" src="assets/guy.png"></v-img>
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient"
@@ -51,7 +51,7 @@
         <div class="small-6 columns">
             <ul>
                 <li v-for="turn in turns"
-                    :class="{'player-turn': turn.isPlayer">
+                    :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}">
                   {{ turn.text }}
                 </li>
             </ul>
@@ -61,13 +61,13 @@
         <div class="small-6 columns">
             <ul>
                 <li v-for="turn in turns"
-                    :class="{'monster-turn': !turn.isPlayer}">
+                    :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}">
                   {{ turn.text }}
                 </li>
             </ul>
         </div>
     </section>
-    </section>
+    </section
 
     </v-layout>
   </v-container>
