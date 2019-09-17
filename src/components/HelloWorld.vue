@@ -1,9 +1,9 @@
-<template >
-  <v-container >
+<template class="ma-auto">
+  <v-container class="ma-auto">
     <v-layout
       text-center
       wrap
-      
+      class="ma-auto"
     >
         <v-flex xs12>
         <section class="ma-2 mx-auto" class="row">
@@ -23,9 +23,9 @@
         <div class="small-6 columns">
             <v-img class="text-center mx-auto" max-width="151" src="assets/zombieGuy.png"></v-img>
             <h1 class="text-center"></h1>
-            <div class="healthbar">
+            <div class="healthbar mt-8">
                 <div 
-                class="healthbar text-center pt-25 fill-height repeating-gradient" 
+                class="healthbar text-center fill-height repeating-gradient" 
                 style="background-color: red; margin: 0; color: white;"
                 :style= "{width: monsterHealth + '%'}">
                 {{monsterHealth}}
@@ -49,7 +49,7 @@
     
     <section class="ma-2" class="row">
       
-      <section class="row log text-center" v-if="turns.length > 0">
+      <section class="row log ma-auto" v-if="turns.length > 0">
           <div class="columns">
               <ul>
                   <li v-for="turn in turns" v-show="turn.isPlayer"
@@ -60,7 +60,7 @@
           </div>
       </section>
 
-      <section class="row log text-center" v-if="turns.length > 0">
+      <section class="row log ma-auto" v-if="turns.length > 0">
           <div class="columns">
               <ul>
                   <li v-for="turn in turns" v-show="!turn.isPlayer"
