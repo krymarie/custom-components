@@ -26,7 +26,7 @@
             <div class="healthbar mt-8">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient" 
-                style="background-color: red; margin: 0; color: white;"
+                style="background-color: red; margin-top: 8px; color: white;"
                 :style= "{width: monsterHealth + '%'}">
                 {{monsterHealth}}
                 </div>
@@ -47,10 +47,10 @@
         </div>
     </section>
     
-    <section class="ma-2" class="row">
+    <section class="ma-2 " class="row">
       
       <section class="row log ma-auto" v-if="turns.length > 0">
-          <div class="columns">
+          <div class="columns mx-auto">
               <ul>
                   <li v-for="turn in turns" v-show="turn.isPlayer"
                       :class="{'player-turn': turn.isPlayer}">
@@ -61,7 +61,7 @@
       </section>
 
       <section class="row log ma-auto" v-if="turns.length > 0">
-          <div class="columns">
+          <div class="columns mx-auto">
               <ul>
                   <li v-for="turn in turns" v-show="!turn.isPlayer"
                       :class="{'monster-turn': !turn.isPlayer}">
