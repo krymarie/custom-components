@@ -25,7 +25,7 @@
             <h1 class="text-center"></h1>
             <div class="healthbar">
                 <div 
-                class="healthbar text-center fill-height repeating-gradient" 
+                class="healthbar text-center pt-25 fill-height repeating-gradient" 
                 style="background-color: red; margin: 0; color: white;"
                 :style= "{width: monsterHealth + '%'}">
                 {{monsterHealth}}
