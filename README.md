@@ -8,7 +8,7 @@
 
 #gadient component on health bar making it fun
 
-#
+#v-footer for a quick footer with timestamp date..
 
 #split up log and used v-show to only show if isPlay is true or false
 
