@@ -1,4 +1,4 @@
-<template>
+<template class="ma-auto">
   <v-container class="ma-auto">
     <v-layout
       text-center
