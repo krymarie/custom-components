@@ -49,8 +49,8 @@
       
       <section class="row log ma-auto" v-if="turns.length > 0">
           <div class="columns ma-auto">
-              <ul>
-                  <li class="ma-auto" v-for="turn in turns" v-show="turn.isPlayer"
+              <ul class="ma-auto" >
+                  <li v-for="turn in turns" v-show="turn.isPlayer"
                       :class="{'player-turn': turn.isPlayer}">
                     {{ turn.text }}
                   </li>
@@ -60,8 +60,8 @@
 
       <section class="row log ma-auto" v-if="turns.length > 0">
           <div class="columns ma-auto">
-              <ul>
-                  <li class="ma-auto" v-for="turn in turns" v-show="!turn.isPlayer"
+              <ul class="ma-auto" >
+                  <li v-for="turn in turns" v-show="!turn.isPlayer"
                       :class="{'monster-turn': !turn.isPlayer}">
                     {{ turn.text }}
                   </li>
