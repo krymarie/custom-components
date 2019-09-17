@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="small-6 columns">
-            <v-img class="text-center" max-width="289" src="assets/zombieGuy.png"></v-img>
+            <v-img class="text-center" max-width="285" src="assets/zombieGuy.png"></v-img>
             <h1 class="text-center"></h1>
             <div class="healthbar">
                 <div 
@@ -79,7 +79,7 @@ export default {
   el: '#modal-app',
 
   data: () => ({
-    showModal: false
+    showModal: false,
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
