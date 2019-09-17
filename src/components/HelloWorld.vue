@@ -21,8 +21,8 @@
             </div>
         </div>
         <div class="small-6 columns">
-            <v-img class="text-center mx-auto" max-width="151" src="assets/zombieGuy.png"></v-img>
-          
+            <v-img class="text-center mb-15 mx-auto" max-width="151" src="assets/zombieGuy.png"></v-img>
+
             <div class="healthbar">
                 <div 
                 class="healthbar text-center fill-height repeating-gradient" 
