@@ -110,7 +110,7 @@ export default {
       this.monsterHealth -= damage;
       this.turns.unshift({
         isPlayer: true,
-        text: 'Player hits Monster hard with ' + damage
+        text: 'Player hits Monster hard ' + damage
       });
       if(this.checkWin()) {
         return;
