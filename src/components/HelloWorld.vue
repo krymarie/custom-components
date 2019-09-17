@@ -9,6 +9,7 @@
     </div>
   </modal>
 </div>
+
 <template id="modal-template">
 <v-container>
     <v-layout
@@ -35,7 +36,6 @@
       </div>
     </div>
   </div>
-</template>
 
         <v-flex xs12>
         <section class="ma-2" class="row">
