@@ -1,9 +1,9 @@
-<template class="ma-auto">
-  <v-container class="ma-auto">
+<template >
+  <v-container >
     <v-layout
       text-center
       wrap
-      class="ma-auto"
+      
     >
         <v-flex xs12>
         <section class="ma-2 mx-auto" class="row">
