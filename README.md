@@ -10,7 +10,7 @@
 
 #
 
-#
+#split up log and used v-show to only show if isPlay is true or false
 
 
 #I SPENT THE WEEK BUILDING A CRM WITH VUTIFY IN CODE PEN SO EASY TO USE ALMOST POSTED THAT INSTEAD

@@ -47,7 +47,8 @@
     </section>
     
     <section class="ma-2" class="row">
-      <section class="row log" v-if="turns.length > 0">
+      
+      <section class="row log mr-4" v-if="turns.length > 0">
           <div class="columns">
               <ul>
                   <li v-for="turn in turns" v-show="turn.isPlayer"
@@ -57,6 +58,7 @@
               </ul>
           </div>
       </section>
+
       <section class="row log" v-if="turns.length > 0">
           <div class="columns">
               <ul>
@@ -67,6 +69,7 @@
               </ul>
           </div>
       </section>
+
     </section
 
     </v-layout>
