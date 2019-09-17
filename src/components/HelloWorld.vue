@@ -50,7 +50,7 @@
     <section class="row log" v-if="turns.length > 0">
         <div class="columns">
             <ul>
-                <li v-for="turn in turns v-show="turn.isPlayer"
+                <li v-for="turn in turns" v-show="turn.isPlayer"
                     :class="{'player-turn': turn.isPlayer}">
                   {{ turn.text }}
                 </li>
