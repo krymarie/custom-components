@@ -15,7 +15,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-content text-center width="1260px">
+    <v-content text-center>
       <HelloWorld/>
     </v-content>
   </v-app>
