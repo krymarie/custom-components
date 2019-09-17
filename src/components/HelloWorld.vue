@@ -182,7 +182,7 @@ export default {
    
     checkWin: function() {
       if (this.monsterHealth <= 0) {
-        if (sucsess('Your won! New Game?')) {
+        if (confirm('Your won! New Game?')) {
           this.startGame();
         } else {
           this.gameIsRunning = false;
