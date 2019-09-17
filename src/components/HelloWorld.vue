@@ -52,7 +52,7 @@
             <ul>
                 <li v-for="turn in turns"
                     :class="{'player-turn': turn.isPlayer}">
-                  {{ turn.text }}
+                  {{ player-turn.text }}
                 </li>
             </ul>
         </div>
