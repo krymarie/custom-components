@@ -15,7 +15,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-content>
+    <v-content class="ma-auto">
       <HelloWorld/>
     </v-content>
   </v-app>
