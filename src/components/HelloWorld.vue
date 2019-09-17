@@ -49,7 +49,7 @@
     
     <section class="ma-2" class="row">
       
-      <section class="row log ma-auto" v-if="turns.length > 0">
+      <section class="row log text-center" v-if="turns.length > 0">
           <div class="columns">
               <ul>
                   <li v-for="turn in turns" v-show="turn.isPlayer"
@@ -60,7 +60,7 @@
           </div>
       </section>
 
-      <section class="row log ma-auto" v-if="turns.length > 0">
+      <section class="row log text-center" v-if="turns.length > 0">
           <div class="columns">
               <ul>
                   <li v-for="turn in turns" v-show="!turn.isPlayer"
