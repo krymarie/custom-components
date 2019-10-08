@@ -42,13 +42,11 @@
 </template>
 
 <script>
-new Vue({
-  el: '#app',
-});
 import User from './components/User.vue';
 
     export default {
-      name: 'App',
+      el: '#app',//trying this format for this application
+      //name: 'App', 
         components: {
             appUser: User
         }
