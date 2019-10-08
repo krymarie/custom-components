@@ -13,9 +13,9 @@
       >
         <span class="mr-2">Latest Repo</span>
       </v-btn>
-    </v-app-bar>
+    </v-app-bar>-->
 
-    <v-content text-center> -->
+    <v-content text-center> 
       <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -23,9 +23,9 @@
             </div>
         </div>
     </div>
-    <!-- </v-content>
+    </v-content>
     
-    <v-card height="150">
+    <!-- <v-card height="150">
       <v-footer
         absolute
         class="font-weight-medium"
