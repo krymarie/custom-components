@@ -1,5 +1,5 @@
 <template>
-  <!-- <v-app>
+  <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>CUSTOM COMPONENT</span>
@@ -13,7 +13,7 @@
       >
         <span class="mr-2">Latest Repo</span>
       </v-btn>
-    </v-app-bar>-->
+    </v-app-bar>
 
     <v-content text-center> 
       <div class="container">
@@ -38,7 +38,7 @@
         </v-col>
       </v-footer>
     </v-card>
-  <!-- </v-app> -->
+  </v-app>
 </template>
 
 <script>
