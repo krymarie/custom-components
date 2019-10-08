@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <!-- <v-app-bar>
       <v-toolbar-title class="headline text-uppercase">
         <span>CUSTOM COMPONENT</span>
         <span class="font-weight-light">KRYSTAL MITCHELL</span>
@@ -13,7 +13,7 @@
       >
         <span class="mr-2">Latest Repo</span>
       </v-btn>
-    </v-app-bar>
+    </v-app-bar> -->
 
     <v-content text-center> 
       <div class="container">
