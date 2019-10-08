@@ -1,5 +1,5 @@
 <template>
-  <!-- <v-app> -->
+  <v-app id="app">
     <!-- <v-app-bar>
       <v-toolbar-title class="headline text-uppercase">
         <span>CUSTOM COMPONENT</span>
@@ -37,8 +37,8 @@
           {{ new Date().getFullYear() }} — <strong>Custom Component</strong>
         </v-col>
       </v-footer>
-    </v-card>
-  </v-app> -->
+    </v-card>-->
+  </v-app> 
 </template>
 
 <script>
