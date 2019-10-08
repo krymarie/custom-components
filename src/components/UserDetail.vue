@@ -1,5 +1,5 @@
 <template>
-    <div class="component">
+    <!-- <div class="component"> -->
         <v-card>
         <h3>You may view the User Details here</h3>
         <p>Many Details</p>
@@ -8,7 +8,7 @@
         <button @click="resetName">Reset Name</button>
         <button @click="resetFn()">Reset Name</button>
         </v-card>
-    </div>
+    <!-- </div> -->
 </template>
 
 <script>

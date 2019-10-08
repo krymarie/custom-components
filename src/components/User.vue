@@ -11,22 +11,18 @@
         <v-card>
         <div class="row">
             <v-card>
-            <!-- <div class="col-xs-12 col-sm-6"> -->
                 <app-user-detail
                         :myName="name"
                         @nameWasReset="name = $event"
                         :resetFn="resetName"
                         :userAge="age"></app-user-detail>
             </v-card>
-            <!-- </div> -->
             <v-card>
-            <!-- <div class="col-xs-12 col-sm-6"> -->
                 <app-user-edit
                         :userAge="age"
                         @ageWasEdited="age = $event"
                 ></app-user-edit>
             </v-card>
-            <!-- </div> -->
         </div>
         </v-card>
     </div>

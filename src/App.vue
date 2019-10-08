@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+  <!-- <v-app> -->
     <!-- <v-app-bar>
       <v-toolbar-title class="headline text-uppercase">
         <span>CUSTOM COMPONENT</span>
@@ -25,8 +25,8 @@
     </div>
     </v-content>
     
-    <!-- <v-card height="150"> -->
-      <!-- <v-footer
+    <!-- <v-card height="150">
+     <v-footer
         absolute
         class="font-weight-medium"
       >
@@ -37,16 +37,15 @@
           {{ new Date().getFullYear() }} — <strong>Custom Component</strong>
         </v-col>
       </v-footer>
-    </v-card>-->
-  </v-app> 
+    </v-card>
+  </v-app>  -->
 </template>
 
 <script>
 import User from './components/User.vue';
 
     export default {
-      el: '#app',//trying this format for this application
-      //name: 'App', 
+      name: 'App', 
         components: {
             appUser: User
         }
