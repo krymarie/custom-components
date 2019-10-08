@@ -42,6 +42,9 @@
 </template>
 
 <script>
+new Vue({
+  el: '#app',
+});
 import User from './components/User.vue';
 
     export default {
