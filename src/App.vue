@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>MONSTER PROJECT</span>
+        <span>CUSTOM COMPONENT</span>
         <span class="font-weight-light">KRYSTAL MITCHELL</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -16,7 +16,13 @@
     </v-app-bar>
 
     <v-content text-center>
-      <HelloWorld/>
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <app-user></app-user>
+            </div>
+        </div>
+    </div>
     </v-content>
     
     <v-card height="150">
@@ -28,7 +34,7 @@
           class="text-center"
           cols="12"
         >
-          {{ new Date().getFullYear() }} — <strong>Monster Slayer</strong>
+          {{ new Date().getFullYear() }} — <strong>Custom Component</strong>
         </v-col>
       </v-footer>
     </v-card>
@@ -36,15 +42,19 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import User from './components/User.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
-};
+    export default {
+      name: 'App',
+        components: {
+            appUser: User
+        }
+    }
 </script>
+
+<style>
+    div.component {
+        border: 1px solid black;
+        padding: 30px;
+    }
+</style>
