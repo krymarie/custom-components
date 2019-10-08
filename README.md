@@ -1,11 +1,19 @@
-# CUSTOM COMPONENTS KRYSTAL MITCHELL
+# krystal-mitchell-monster-project
 
-#HERE ARE JUST A FEW OF THE WAYS MY PROJECT VARIES FROM 
+#HERE ARE JUST A FEW OF THE WAYS MY PROJECT VARRIES FROM 
 
-#UPDATED ALL BOOTSTRAP TO VUE
+#v-btn to easily clean up all buttons
+
+#v-img for new game icons
+
+#gadient component on health bar making it fun
+
+#v-footer for a quick footer with timestamp date..
+
+#split up log and used v-show to only show if isPlay is true or false
 
 
-
+#I SPENT THE WEEK BUILDING A CRM WITH VUTIFY IN CODE PEN SO EASY TO USE ALMOST POSTED THAT INSTEAD
 
 
 ## Project setup
@@ -35,4 +43,3 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# custom-components
