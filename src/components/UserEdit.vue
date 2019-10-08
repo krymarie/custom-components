@@ -1,9 +1,11 @@
 <template>
     <div class="component">
+        <v-card>
         <h3>You may edit the User here</h3>
         <p>Edit me!</p>
         <p>User Age: {{ userAge }}</p>
         <button @click="editAge">Edit Age</button>
+        </v-card>
     </div>
 </template>
 

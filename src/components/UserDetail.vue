@@ -24,6 +24,7 @@
         },
         methods: {
             switchName() {
+                //can't see this being used but insert urlencode...to buildlinks...
                 return this.myName.split("").reverse().join("");
             },
             resetName() {
