@@ -35,15 +35,7 @@
     margin: 5px;
 }
 
-.log ul .player-turn {
-    color: blue;
-    background-color: #e4e8ff;
-}
 
-.log ul .monster-turn {
-    color: red;
-    background-color: #ffc0c1;
-}
 
 .repeating-gradient {
     background-image: repeating-linear-gradient(-45deg,
@@ -60,25 +52,3 @@ button {
     box-shadow: 0 1px 1px black;
     margin: 10px;
 }
-
-
-#start-game:hover {
-    background-color: #6d6b6b;
-}
-
-#attack:hover {
-    background-color: #6d6b6b;
-}
-
-#special-attack:hover {
-    background-color: #6d6b6b;
-}
-
-#heal:hover {
-    background-color: #6d6b6b;
-}
-
-#give-up:hover {
-    background-color: #6d6b6b;
-}
-  

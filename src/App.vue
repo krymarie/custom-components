@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
       <v-btn
         text
-        href="https://github.com/krymarie/krystal-mitchell-monster-project/commits/master"
+        href="https://github.com/krymarie/krystal-mitchell-custom-component/commits/master"
         target="_blank"
       >
         <span class="mr-2">Latest Repo</span>
