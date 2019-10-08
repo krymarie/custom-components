@@ -1,11 +1,14 @@
 <template>
     <div class="component">
         <h1>The User Component</h1>
+        <v-card>
         <p>I'm an awesome User!</p>
         <button @click="changeName">Change my Name</button>
         <p>Name is {{ name }}</p>
         <p>Age is {{ age }}</p>
+        </v-card>
         <hr>
+        <v-card>
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <app-user-detail
@@ -21,6 +24,7 @@
                 ></app-user-edit>
             </div>
         </div>
+        </v-card>
     </div>
 </template>
 
