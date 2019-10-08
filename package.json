@@ -1,7 +1,5 @@
 {
-  "name": "krystal-mitchell-custom-components",
-  "description": "A custom component example",
-  "author": "Krystal Mitchell <info@krystalmitchell.com>",
+  "name": "krystal-mitchell-monster-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
